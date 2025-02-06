@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div class="crud">
+    <div class="head">
+<h1>CRUD</h1>
+<P> PRODUCT MANAGMENT SYSTEME </P>
+</div>
+
+    <div class="inpute">
+
+        <input placeholder="title" type="text" id="title">
+       <div class="price">
+          
+           <input onkeyup="getTotal() " type="number" id="price"  placeholder="price">
+           <input Onkeyup="getTotal() "  type="number" id="taxes" placeholder="taxes">
+           <input Onkeyup="getTotal() "  type="number" id="ads" placeholder="ads">
+           <input Onkeyup="getTotal() "  type="number" id="discount" placeholder="discount">
+           <input Onkeyup="getTotal() "  type="number" id="compt" placeholder="compt">
+           <small id="total"> : </small>
+    
+    </div>
+        
+        <input placeholder="count" type="number" id="count">
+        <input placeholder="category" type="text" id="category">
+<button id="submit">creat</button>
+
+    </div>
+
+
+    <div class="outpute">
+        <input onkeyup="serchdata(this.value)" placeholder="search" type="text" id="search">
+        <div class="searchby">
+            <button onclick="searchbyid(this.id)"  id="search by title"> search by title</button>
+            <button onclick="searchbyid(this.id)" id="search by category">search by category</button>
+   
+        </div>
+</div>
+
+ </div>
+
+<div id="deleteall">
+</div>
+
+<table>
+    <tr>
+<th>id</th>
+<th>title</th>
+<th>price</th>
+<th>taxes</th>
+<th>ads</th>
+<th>discount</th>
+<th>total</th>
+<th>category</th>
+<th>update</th>
+<th>delet</th>
+</tr>
+<tbody id="tbody">
+
+</tbody>
+</table>
+<script src="consept.js"></script>
+</body>
+</html>
