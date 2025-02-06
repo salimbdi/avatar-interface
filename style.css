@@ -1,0 +1,57 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+background-image: linear-gradient(to right, #01022de5 ,#000); 
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content{
+background-image: linear-gradient(
+    to right, #01022de5 , #00000088 ),
+url(bg.webp);
+width: 90%;
+height: 640px;
+background-position: center;
+}
+.content:hover{
+    background-image: linear-gradient(
+        to right, #01022de5 40% , transparent),
+    url(bg.webp)
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+    width: 90%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10%;
+
+}
+ul a{
+    border-bottom: solid transparent ;
+}
+ul a:hover{
+    border-bottom: solid white;
+}
